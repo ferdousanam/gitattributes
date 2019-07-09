@@ -1,0 +1,22 @@
+# The pattern of writting a .gitattributes file we have to follow:
+# <file pattern> <the command>
+# The file pattern writting is the same as .gitignore file
+#
+* text=auto
+#
+# If we use linguist-vendored then by default it is linguist-vendored = true
+#		If we want to ignore a file or a pattern of files we can use linguist-vendored = true
+#		So, If we want to use linguist-vendored we can write,
+#				linguist-vendored
+#				or,
+#				linguist-vendored = true
+#		If we do not want to ignore a file or a pattern of files we can use linguist-vendored = false
+*.css linguist-vendored
+*.scss linguist-vendored
+*.js linguist-vendored=true
+#
+# We use export-ignore to Exclude files from exporting
+CHANGELOG.md export-ignore
+#
+# If we use linguist-language then the file or the pattern of the file will be considered as we have specified language.
+*.html linguist-language = PHP # This will consider *.html files as PHP
