@@ -1,0 +1,12 @@
+#
+*                   text=auto
+#
+*.css               linguist-vendored
+*.scss              linguist-vendored
+*.js                linguist-vendored
+user_guide/*        linguist-vendored
+#
+README.md           export-ignore
+contributing.md     export-ignore
+CHANGELOG.md        export-ignore
+user_guide/         export-ignore
